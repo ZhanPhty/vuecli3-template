@@ -6,5 +6,6 @@
 </template>
 
 <style lang="scss">
-.router-view-box {}
+.router-view-box {
+}
 </style>

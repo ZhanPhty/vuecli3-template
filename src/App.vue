@@ -7,5 +7,4 @@
 <style lang="scss">
 // 引用初始化css
 @import './assets/scss/base';
-
 </style>

@@ -37,14 +37,14 @@ module.exports = {
   chainWebpack: () => {},
   configureWebpack: () => {
     if (process.env.NODE_ENV === 'production') {
-      console.log('生成环境')
       // 为生产环境修改配置...
+      console.log('生产环境')
     } else if (process.env.NODE_ENV === 'development') {
-      console.log('开发环境')
       // 为开发环境修改配置...
+      console.log('开发环境')
     } else if (process.env.NODE_ENV === 'testing') {
-      console.log('测试环境')
       // 为测试环境修改配置...
+      console.log('测试环境')
     }
   },
 

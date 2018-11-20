@@ -3,6 +3,9 @@ import axios from 'axios'
 import qs from 'qs'
 import vueAxios from 'vue-axios'
 
+// 打印控制台，跳过eslint
+import consolelog from '@/axios/api/consolelog' // eslint-disable-line
+
 Vue.use(vueAxios, axios)
 
 // http request 拦截器
