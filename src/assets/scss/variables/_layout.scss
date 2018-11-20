@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+// Grid
+$max-width: 1200px;
+$max-width-narrow: 720px;
+
+// Spacing - 间距
+$horizontal-padding-small: 30px;
+$horizontal-padding-medium: 60px;
+
+// Containers - 容器
+$limitWidth: $max-width + ($horizontal-padding-medium * 2);
+
+// 元素上下间距
+//----------------------------------------------------- 
+$gap: 20px !default;
+
+
+// header,footer等的高度
+//----------------------------------------------------- 
+$barHeight: 44px !default;
+
+
+// radius
+//----------------------------------------------------- 
+$radiusBase: 5px !default;
+$radiusSmall: 3px !default;
+
+
+// timing-function
+//-----------------------------------------------------
+$timingFunction: cubic-bezier(0.42, 0, 0.58, 1);
+
+// active state switch
+//-----------------------------------------------------
+$borderBoxSwitch: true !default;
+$activeStateSwitch: true !default;
+
+// z-index
+//----------------------------------------------------- 
+$zIndexHeader: 1000 !default;
+$zIndexFooter: 2000 !default;
+$zIndexPopup: 3000 !default;                     
+$zIndexOverlay: 4000 !default; // 默认高于header和footer部分
+
+// z-index
+//----------------------------------------------------- 
+$zIndexHeader: 1000 !default;
+$zIndexFooter: 2000 !default;
+$zIndexPopup: 3000 !default;                     
+$zIndexOverlay: 4000 !default; // 默认高于header和footer部分
