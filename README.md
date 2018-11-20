@@ -81,13 +81,9 @@ vue ui   //启动图形化界面
 封装后的axios，无需每个页面都axios，只需要`this.$api`直接调用对应的接口
 ##### 示例（@/axios/api/user.js文件下的login接口）
 `this.$api.user.login({
-
-　　userid: 1234
-  
+   userid: 1234
 }).then(res => {
-
-　　console.log(res)
-  
+   console.log(res)
 })`
 
 ### router
