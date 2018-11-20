@@ -10,14 +10,6 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'index',
-      component: () => import('@/views/Home'),
-      meta: {
-        title: '首页'
-      }
-    },
-    {
       path: '/404',
       name: 'nofind',
       component: () => import('@/views/common/404'),
@@ -26,8 +18,8 @@ export default new Router({
       }
     },
     {
-      path: '/about',
-      component: () => import('@/views/router/router'),
+      path: '/',
+      component: () => import('@/views/Demo'),
       meta: {
         title: 'demo页面'
       },
