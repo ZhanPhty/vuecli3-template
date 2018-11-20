@@ -1,6 +1,6 @@
 export default [
   {
-    path: '/',
+    path: '',
     name: 'demohome',
     component: () => import('@/views/About'),
     meta: {

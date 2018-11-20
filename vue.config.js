@@ -102,7 +102,7 @@ module.exports = {
   // 第三方插件的选项
   pluginOptions: {
     env: {
-      TEST: 'vue.config.js-->env:TEST'
+      TEST: 'vue.config.js-->pluginOptions.env:TEST Global Parameters'
     }
   }
 }

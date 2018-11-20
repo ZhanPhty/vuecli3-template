@@ -48,6 +48,7 @@ function successState(res) {
   // }
 }
 
+// 配置axios
 const httpServer = (opts, data) => {
   // 设置默认headers
   let headers =
@@ -62,7 +63,7 @@ const httpServer = (opts, data) => {
   // 公共参数
   let publicParams = {}
 
-  //http默认配置
+  // http默认配置
   let httpDefaultOpts = {
     method: opts.method, // 必填
     baseURL: opts.baseURL || process.env.VUE_APP_API, // 必填
