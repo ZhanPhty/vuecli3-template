@@ -73,9 +73,11 @@ vue ui   //启动图形化界面
 * 对router模块化引用，方便维护
 * vuex同样模块化，分类管理
 
+
 ### sass
 使用简便的[sandal](http://marvin1023.github.io/sandal/)框架，在其基础上拆分多个目录，更清晰的分类
 > 配置：vue.config.js  --> css.loaderOptions.sass  --> data: '@import "@/assets/scss/settings.scss";'
+
 
 ### axios
 封装后的axios，无需每个页面都axios，只需要`this.$api`直接调用对应的接口
@@ -86,8 +88,10 @@ vue ui   //启动图形化界面
    console.log(res)
 })`
 
+
 ### router
 模块化router，对一级以下的路由`(routes.children)`进行分类管理
+
 
 ### store
 模块化vuex，使用官方的modules引入各个模块
@@ -98,10 +102,12 @@ vue ui   //启动图形化界面
 * getters.js
 * mutations.js
 
+
 ### vue.config.js
 > pluginOptions.env.TEST
 
 自定义全局变量，打印测试`console.log(process.env.TEST)`
+
 
 ##### vue-cli其他配置
 传送门： [vue-cli3](https://cli.vuejs.org/zh/).
