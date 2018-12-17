@@ -1,4 +1,4 @@
-import axiosApi from '@/axios/axios-config'
+import axiosApi from '@/axios/config'
 
 export default {
   /**

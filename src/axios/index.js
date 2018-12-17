@@ -1,22 +1,20 @@
-import apiList from './api'
+/*
+ * 引用api模块
+ *
+ * // 示例：调用user模块下的login接口
+ * this.$api.user.login({
+ *   userid: 1
+ * }).then(res => {
+ *   res.data
+ * }).catch(err => {
+ *   err.data
+ * })
+ */
 
-const install = function(Vue) {
-  if (install.installed) {
-    return
-  } else {
-    install.installed = true
-  }
-
-  // 定义属性到Vue原型中
-  Object.defineProperties(Vue.prototype, {
-    $api: {
-      get() {
-        return apiList
-      }
-    }
-  })
-}
+import common from '@/axios/api/common'
+import user from '@/axios/api/user'
 
 export default {
-  install
+  common,
+  user
 }
