@@ -2,9 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import apiAxios from './axios/api.request'
 
-Vue.use(apiAxios)
+// base样式
+import '@/assets/scss/base.scss'
 
 Vue.config.productionTip = false
 

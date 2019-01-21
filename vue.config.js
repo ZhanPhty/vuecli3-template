@@ -1,5 +1,5 @@
 const path = require('path')
-const resolve = (dir) => path.join(__dirname, dir)
+const resolve = dir => path.join(__dirname, dir)
 
 module.exports = {
   // 项目部署的基础路径
@@ -37,7 +37,7 @@ module.exports = {
 
   // 调整内部的 webpack 配置。
   // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli/webpack.md
-  chainWebpack: () => {
+  chainWebpack: config => {
     config.resolve.alias
       .set('@', resolve('src'))
       .set('components', resolve('src/components'))

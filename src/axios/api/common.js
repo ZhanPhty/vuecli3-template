@@ -1,41 +1,69 @@
 import axiosApi from '@/axios/config'
 
-export default {
-  /**
-   * 通用post请求
-   * @param {String} url 接口url
-   * @param {String} method 请求方式
-   * @param {Obj} params 参数
-   * @param {Fn} cb 回调函数
-   * @return
-   */
-  post: params => {
-    return axiosApi(
-      {
-        baseURL: process.env.VUE_APP_API,
-        url: '/default',
-        method: 'post'
-      },
-      params
-    )
-  },
+/**
+ * post 请求
+ * @param {String} url 接口url
+ * @param {Obj} params 参数
+ * @param {Fn} cb 回调函数
+ * @return
+ */
+export const post = (url, params) => {
+  return axiosApi.httpServer(
+    {
+      url: url,
+      method: 'post'
+    },
+    params
+  )
+}
 
-  /**
-   * 通用get请求
-   * @param {String} url 接口url
-   * @param {String} method 请求方式
-   * @param {Obj} params 参数
-   * @param {Fn} cb 回调函数
-   * @return
-   */
-  get: params => {
-    return axiosApi(
-      {
-        baseURL: process.env.VUE_APP_API,
-        url: '/default',
-        method: 'get'
-      },
-      params
-    )
-  }
+/**
+ * put 请求
+ * @param {String} url 接口url
+ * @param {Obj} params 参数
+ * @param {Fn} cb 回调函数
+ * @return
+ */
+export const put = (url, params) => {
+  return axiosApi.httpServer(
+    {
+      url: url,
+      method: 'put'
+    },
+    params
+  )
+}
+
+/**
+ * get 请求
+ * @param {String} url 接口url
+ * @param {Obj} params 参数
+ * @param {Fn} cb 回调函数
+ * @return
+ */
+export const get = (url, params) => {
+  return axiosApi.httpServer(
+    {
+      url: url,
+      method: 'get'
+    },
+    params
+  )
+}
+
+/**
+ * delete 请求
+ * @param {String} url 接口url
+ * @param {Obj} params 参数
+ * @param {Fn} cb 回调函数
+ * @return
+ */
+export const del = (url, params) => {
+  return axiosApi.httpServer(
+    {
+      url: url,
+      method: 'delete'
+    },
+    params
+  )
 }
